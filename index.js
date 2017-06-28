@@ -9,7 +9,9 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 //DB Setup
-mongoose.connect('mongodb://localhost:auth/auth');
+//mongoose.connect('mongodb://localhost:auth/auth');
+mongoose.connect('mongodb://admin:123456@ds139322.mlab.com:39322/wonolosample');
+
 
 //App Setup
 app.use(morgan('combined'));
